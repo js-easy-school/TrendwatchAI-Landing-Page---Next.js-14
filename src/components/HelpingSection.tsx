@@ -125,8 +125,8 @@ export default function HelpingSection() {
                     <th>#</th>
                     <th>account_url</th>
                     <th>reels_url</th>
-                    <th>Вирусность</th>
-                    <th>Вовлечённость</th>
+                    <th>Virality</th>
+                    <th>Engagement</th>
                     <th>original_script</th>
                     <th>rewrited_script</th>
                     <th>status</th>
