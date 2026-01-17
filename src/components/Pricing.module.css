@@ -1,0 +1,219 @@
+.pricing {
+  padding: 100px 0;
+}
+
+.billingToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.toggleLabel {
+  font-weight: 500;
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.toggleLabel.active {
+  color: var(--secondary);
+}
+
+.discount {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--success);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-left: 4px;
+}
+
+.toggle {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleTrack {
+  position: absolute;
+  inset: 0;
+  background: var(--border);
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.toggleTrack::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle input:checked + .toggleTrack {
+  background: var(--primary);
+}
+
+.toggle input:checked + .toggleTrack::before {
+  transform: translateX(26px);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.priceCard {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 2px solid var(--border);
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+}
+
+.priceCard.animateIn {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.priceCard:hover {
+  border-color: var(--primary-light);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.2);
+}
+
+.priceCard.featured {
+  border-color: var(--primary);
+  transform: scale(1.02);
+  box-shadow: 0 25px 50px rgba(99, 102, 241, 0.15);
+}
+
+.priceCard.featured.animateIn {
+  transform: scale(1.02);
+}
+
+.priceCard.featured:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.priceHeader {
+  margin-bottom: 24px;
+}
+
+.priceHeader h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--secondary);
+}
+
+.priceHeader p {
+  color: var(--text-light);
+}
+
+.priceAmount {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 32px;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.amount {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1;
+  margin: 0 4px;
+}
+
+.period {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.priceFeatures {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.priceFeatures li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.priceFeatures li:last-child {
+  border-bottom: none;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+[data-theme="dark"] .toggleTrack {
+  background: var(--bg);
+}
+
+[data-theme="dark"] .toggleTrack::before {
+  background: var(--text);
+}
+
+@media (max-width: 1024px) {
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .priceCard.featured {
+    transform: none;
+  }
+
+  .priceCard.featured.animateIn {
+    transform: none;
+  }
+}

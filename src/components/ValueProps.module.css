@@ -1,0 +1,82 @@
+.valueProps {
+  padding: 100px 0;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  text-align: center;
+  padding: 32px 24px;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.valueCard.animateIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.valueCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(99, 102, 241, 0.1);
+}
+
+.valueCard:hover .valueNumber {
+  background: linear-gradient(145deg, var(--primary-light), var(--primary));
+  color: white;
+  border-color: var(--primary);
+}
+
+.valueNumber {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 20px;
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+  color: var(--secondary);
+  border: 2px solid var(--border);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.valueCard h3 {
+  margin-bottom: 8px;
+  color: var(--secondary);
+}
+
+.valueCard p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+[data-theme="dark"] .valueNumber {
+  background: linear-gradient(145deg, #334155, #1e293b);
+  color: var(--primary-light);
+  border-color: var(--border);
+}
+
+@media (max-width: 1024px) {
+  .valueGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+}

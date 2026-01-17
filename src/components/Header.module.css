@@ -1,0 +1,123 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--header-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrolled {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+.logoIcon {
+  font-size: 1.5rem;
+}
+
+.logoText {
+  color: var(--secondary);
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  font-weight: 500;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.themeToggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.themeToggle:hover {
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.themeToggle svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text);
+}
+
+.sunIcon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+}
+
+.moonIcon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0);
+}
+
+.sunIcon.active {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.moonIcon.active {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.btnGhost {
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .btnGhost {
+    display: none;
+  }
+}

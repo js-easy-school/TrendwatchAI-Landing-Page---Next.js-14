@@ -1,0 +1,194 @@
+.helpingSection {
+  padding: 80px 0 100px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.helpingContent {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.helpingText h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--secondary);
+}
+
+.helpingSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.helpingSpreadsheet {
+  position: relative;
+  animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.spreadsheetWrapper {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.dataTable thead {
+  background: var(--bg-alt);
+}
+
+.dataTable th {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  position: relative;
+}
+
+.dataTable th::after {
+  content: "▼";
+  font-size: 8px;
+  margin-left: 4px;
+  opacity: 0.5;
+}
+
+.dataTable td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dataTable tbody tr {
+  transition: background 0.2s ease;
+}
+
+.dataTable tbody tr:hover {
+  background: var(--bg-alt);
+}
+
+.accountLink {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.urlCell {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.scriptCell {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Status badges */
+.statusVirus {
+  background: #dc2626;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusBestPurple {
+  background: #7c3aed;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusGood {
+  background: #fbbf24;
+  color: #1e293b;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusBest {
+  background: #22c55e;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusAvg {
+  background: #f97316;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusLower {
+  background: #ef4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusHook {
+  background: #22c55e;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.statusEmpty {
+  background: var(--bg-alt);
+  color: var(--text-light);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .helpingContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .helpingText {
+    text-align: center;
+  }
+}

@@ -1,0 +1,110 @@
+.bonuses {
+  padding: 80px 0;
+  background: var(--bg-alt);
+}
+
+.bonusGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bonusCard {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  padding: 24px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.bonusCard[data-index="1"] {
+  transform: translateX(40px);
+}
+
+.bonusCard.animateIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bonusCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.bonusCard img {
+  width: 100%;
+  min-width: 380px;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.bonusContent {
+  padding: 12px;
+}
+
+.bonusTag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1),
+    rgba(99, 102, 241, 0.2)
+  );
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.bonusContent h3 {
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+.bonusContent p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .bonusTag {
+  background: linear-gradient(
+    135deg,
+    rgba(129, 140, 248, 0.2),
+    rgba(129, 140, 248, 0.3)
+  );
+}
+
+@media (max-width: 1024px) {
+  .bonusCard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bonusCard img {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bonusCard {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bonusCard img {
+    margin: 0 auto;
+    min-width: auto;
+    max-width: 100%;
+  }
+}

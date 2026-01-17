@@ -1,0 +1,72 @@
+.bookSection {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.bookContent {
+  text-align: center;
+}
+
+.bookContent h2 {
+  margin-bottom: 16px;
+  color: var(--secondary);
+}
+
+.bookContent > p {
+  color: var(--text-light);
+  margin-bottom: 48px;
+}
+
+.bookOptions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.calendarEmbed {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+.calendarEmbed iframe {
+  display: block;
+}
+
+.calendarFallback {
+  padding: 24px;
+  text-align: center;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+}
+
+.calendarFallback p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.contactAlternative {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.contactAlternative h3 {
+  margin-bottom: 24px;
+  color: var(--secondary);
+}
+
+[data-theme="dark"] .calendarFallback {
+  background: var(--bg);
+}
+
+@media (max-width: 1024px) {
+  .bookOptions {
+    grid-template-columns: 1fr;
+  }
+}
