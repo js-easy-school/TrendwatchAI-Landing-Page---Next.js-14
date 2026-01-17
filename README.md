@@ -1,10 +1,18 @@
-# TrendwatchAI Landing Page
+# TrendwatchAI Landing Page — Redesign
+
+**Redesign & migration to Next.js 14** of the original project: [trendwatch.framer.ai](https://trendwatch.framer.ai)
+
+> ⚠️ **Disclaimer:** This is a redesign/rebuild for educational and portfolio purposes. 
+> The original project and brand belong to their respective owners.
+> All images used are from the original project.
+
+---
 
 Modern Next.js 14 landing page for TrendwatchAI — AI-powered competitor tracking platform for Reels, TikTok & Shorts.
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
-![License](https://img.shields.io/badge/License-Commercial-green)
+![Redesign](https://img.shields.io/badge/Type-Redesign-orange)
 
 ---
 
