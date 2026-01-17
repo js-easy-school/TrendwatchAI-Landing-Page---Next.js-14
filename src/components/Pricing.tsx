@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import styles from "./Pricing.module.css";
+import content from "@/content/site-content.json";
 
 // SVG Icons - без круглых фонов
 const Icons = {
@@ -192,9 +193,9 @@ export default function Pricing() {
     <section id="pricing" className={styles.pricing}>
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Pricing</span>
-          <h2>Our Plans</h2>
-          <p>Choose a flexible plan for any business size</p>
+          <span className="section-tag">{content.pricing.sectionTag}</span>
+          <h2>{content.pricing.sectionTitle}</h2>
+          <p>{content.pricing.sectionSubtitle}</p>
         </div>
 
         <div className={styles.billingToggle}>

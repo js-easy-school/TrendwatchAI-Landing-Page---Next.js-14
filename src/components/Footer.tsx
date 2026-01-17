@@ -1,7 +1,10 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import content from "@/content/site-content.json";
 
 export default function Footer() {
+  const { contact, footer } = content;
+
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.footerInner}`}>
@@ -38,14 +41,14 @@ export default function Footer() {
           >
             Privacy Policy
           </Link>
-          <Link href="https://t.me/olegmazunin" target="_blank">
+          <Link href={`https://t.me/${contact.telegram}`} target="_blank">
             Telegram
           </Link>
         </nav>
       </div>
       <div className={styles.footerBottom}>
         <div className="container">
-          <p>© 2024 TrendwatchAI. All rights reserved.</p>
+          <p>{footer.copyright}</p>
         </div>
       </div>
     </footer>

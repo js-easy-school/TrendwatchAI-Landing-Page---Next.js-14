@@ -3,8 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
+import content from "@/content/site-content.json";
 
 export default function Hero() {
+  const { hero, contact } = content;
+
   return (
     <section className={styles.hero}>
       <div className="container">
@@ -25,17 +28,14 @@ export default function Hero() {
               </svg>
               AI-powered Reels Intelligence
             </span>
-            <h1>Stop Guessing Which Reels Go Viral</h1>
-            <p className={styles.heroSubtitle}>
-              Use what already works in your niche. Track up to 50 content
-              creators and get daily analysis of hooks, topics, and CTAs.
-            </p>
+            <h1>{hero.title}</h1>
+            <p className={styles.heroSubtitle}>{hero.subtitle}</p>
             <div className={styles.heroCta}>
               <Link href="#book" className="btn btn-primary btn-lg">
-                Book a Call
+                {hero.buttonSecondary}
               </Link>
               <Link
-                href="https://t.me/olegmazunin"
+                href={`https://t.me/${contact.telegram}`}
                 target="_blank"
                 className="btn btn-outline btn-lg"
               >

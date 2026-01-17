@@ -13,11 +13,13 @@ src/content/site-content.json
 ```
 
 ### Step 1: Open the file
+
 - Go to your repository on GitHub
 - Navigate to `src/content/site-content.json`
 - Click the pencil icon (✏️) to edit
 
 ### Step 2: Edit the text
+
 Change any text between the quotes `"..."`:
 
 ```json
@@ -26,6 +28,7 @@ Change any text between the quotes `"..."`:
 ```
 
 ### Step 3: Save changes
+
 - Scroll down and click "Commit changes"
 - The website will automatically rebuild (2-3 minutes)
 
@@ -33,17 +36,17 @@ Change any text between the quotes `"..."`:
 
 ## 📋 What You Can Edit
 
-| Section | What to change |
-|---------|----------------|
-| `hero.title` | Main headline |
-| `hero.subtitle` | Description under headline |
-| `hero.buttonPrimary` | First button text |
-| `hero.buttonSecondary` | Second button text |
-| `pricing.plans[].monthlyPrice` | Monthly prices |
-| `pricing.plans[].yearlyPrice` | Yearly prices |
-| `faq.items[]` | FAQ questions and answers |
-| `contact.telegram` | Telegram username |
-| `contact.email` | Email address |
+| Section                        | What to change             |
+| ------------------------------ | -------------------------- |
+| `hero.title`                   | Main headline              |
+| `hero.subtitle`                | Description under headline |
+| `hero.buttonPrimary`           | First button text          |
+| `hero.buttonSecondary`         | Second button text         |
+| `pricing.plans[].monthlyPrice` | Monthly prices             |
+| `pricing.plans[].yearlyPrice`  | Yearly prices              |
+| `faq.items[]`                  | FAQ questions and answers  |
+| `contact.telegram`             | Telegram username          |
+| `contact.email`                | Email address              |
 
 ---
 
@@ -59,6 +62,7 @@ Change any text between the quotes `"..."`:
 ## 🆘 If Something Breaks
 
 If the site stops working after your edit:
+
 1. Go to GitHub → Actions tab
 2. Check for red ❌ errors
 3. Undo your last commit, or
@@ -69,11 +73,13 @@ If the site stops working after your edit:
 ## 💡 Example: Changing Price
 
 Before:
+
 ```json
 "monthlyPrice": 95,
 ```
 
 After:
+
 ```json
 "monthlyPrice": 120,
 ```
