@@ -1,7 +1,7 @@
 .helpingSection {
   padding: 80px 0 100px;
   background: var(--bg);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .helpingContent {
@@ -11,11 +11,17 @@
   align-items: center;
 }
 
+.helpingText {
+  padding: 0 20px;
+}
+
 .helpingText h2 {
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 700;
   margin-bottom: 16px;
   color: var(--secondary);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .helpingSubtitle {
@@ -23,20 +29,23 @@
   color: var(--text-light);
   font-style: italic;
   line-height: 1.6;
+  word-wrap: break-word;
 }
 
 .helpingSpreadsheet {
   position: relative;
   animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .spreadsheetWrapper {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow-x: auto;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
-  overflow-x: auto;
+  min-width: 600px;
 }
 
 .dataTable {
@@ -196,21 +205,33 @@
 @media (max-width: 768px) {
   .helpingSection {
     padding: 60px 0 80px;
+    overflow-x: hidden;
+  }
+
+  .helpingText {
+    padding: 0 20px;
   }
 
   .helpingText h2 {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .helpingSubtitle {
     font-size: 1rem;
   }
 
+  .helpingSpreadsheet {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .spreadsheetWrapper {
-    margin: 0 -20px;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    border-radius: var(--radius-lg);
+    min-width: 600px;
   }
 
   .dataTable {
@@ -234,7 +255,8 @@
 
 @media (max-width: 480px) {
   .helpingText h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
   }
 
   .helpingSubtitle {
