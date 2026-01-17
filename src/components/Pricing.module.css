@@ -85,7 +85,7 @@
 .priceCard {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 24px;
   border: 2px solid var(--border);
   position: relative;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
