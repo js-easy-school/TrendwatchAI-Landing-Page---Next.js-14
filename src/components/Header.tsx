@@ -82,10 +82,10 @@ export default function Header() {
             target="_blank"
             className={`btn btn-ghost ${styles.btnGhost}`}
           >
-            Написать
+            Contact
           </Link>
           <Link href="#book" className="btn btn-primary">
-            Записаться
+            Book a Call
           </Link>
         </div>
       </div>

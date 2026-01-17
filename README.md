@@ -2,7 +2,7 @@
 
 **Redesign & migration to Next.js 14** of the original project: [trendwatch.framer.ai](https://trendwatch.framer.ai)
 
-> ⚠️ **Disclaimer:** This is a redesign/rebuild for educational and portfolio purposes. 
+> ⚠️ **Disclaimer:** This is a redesign/rebuild for educational and portfolio purposes.
 > The original project and brand belong to their respective owners.
 > All images used are from the original project.
 
@@ -446,19 +446,21 @@ npm run dev -- -p 3001
 
 This project is licensed **exclusively** for commercial use by:
 
-| | |
-|---|---|
-| **Licensee** | TrendwatchAI |
-| **Website** | [trendwatch.framer.ai](https://trendwatch.framer.ai) |
-| **Contact** | @olegmazunin (Telegram) |
+|              |                                                      |
+| ------------ | ---------------------------------------------------- |
+| **Licensee** | TrendwatchAI                                         |
+| **Website**  | [trendwatch.framer.ai](https://trendwatch.framer.ai) |
+| **Contact**  | @olegmazunin (Telegram)                              |
 
 ✅ **Permitted:**
+
 - Use for TrendwatchAI commercial purposes
 - Modify the code
 - Deploy to any hosting
 - Use on TrendwatchAI domains
 
 ❌ **Prohibited:**
+
 - Use for any other project or company
 - Resell or redistribute the source code
 - Sublicense to third parties
