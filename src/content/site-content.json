@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Find viral ideas for your Reels",
+    "subtitle": "Automatically analyze your competitors, track viral trends, and get daily content inspiration for Reels, TikTok, and YouTube Shorts",
+    "buttonPrimary": "Start Free",
+    "buttonSecondary": "Book a Demo"
+  },
+  "pricing": {
+    "sectionTag": "Pricing",
+    "sectionTitle": "Our Plans",
+    "sectionSubtitle": "Choose a flexible plan for any business size",
+    "plans": [
+      {
+        "name": "Basic",
+        "description": "For beginner content creators",
+        "monthlyPrice": 95,
+        "yearlyPrice": 912,
+        "buttonText": "Get Started"
+      },
+      {
+        "name": "Pro",
+        "description": "For experienced creators and marketers",
+        "monthlyPrice": 195,
+        "yearlyPrice": 1872,
+        "buttonText": "Get Started",
+        "featured": true
+      },
+      {
+        "name": "B2B",
+        "description": "For teams and agencies",
+        "monthlyPrice": 295,
+        "yearlyPrice": 2832,
+        "buttonText": "Contact Us"
+      }
+    ]
+  },
+  "faq": {
+    "sectionTag": "FAQ",
+    "sectionTitle": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How does competitor tracking work?",
+        "answer": "Our AI automatically monitors your competitors' social media accounts and analyzes their content performance, engagement rates, and viral trends."
+      },
+      {
+        "question": "Which platforms are supported?",
+        "answer": "We support Instagram Reels, TikTok, and YouTube Shorts. More platforms coming soon."
+      },
+      {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, you can cancel your subscription at any time. No questions asked."
+      },
+      {
+        "question": "Is there a free trial?",
+        "answer": "Yes! Start with our free plan to test the basic features before upgrading."
+      }
+    ]
+  },
+  "contact": {
+    "telegram": "olegmazunin",
+    "email": "hello@trendwatch.ai"
+  },
+  "footer": {
+    "copyright": "© 2026 TrendwatchAI. All rights reserved."
+  }
+}
