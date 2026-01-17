@@ -36,16 +36,14 @@
   position: relative;
   animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   width: 100%;
-  overflow-x: auto;
 }
 
 .spreadsheetWrapper {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
-  overflow-x: auto;
+  overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
-  min-width: 600px;
 }
 
 .dataTable {
