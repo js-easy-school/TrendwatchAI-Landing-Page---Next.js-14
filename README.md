@@ -442,21 +442,30 @@ npm run dev -- -p 3001
 
 ## 📄 License
 
-**Commercial License**
+**Proprietary License — TrendwatchAI Only**
 
-This project is licensed for commercial use by the purchasing party.
+This project is licensed **exclusively** for commercial use by:
 
-✅ You may:
+| | |
+|---|---|
+| **Licensee** | TrendwatchAI |
+| **Website** | [trendwatch.framer.ai](https://trendwatch.framer.ai) |
+| **Contact** | @olegmazunin (Telegram) |
 
-- Use for commercial purposes
+✅ **Permitted:**
+- Use for TrendwatchAI commercial purposes
 - Modify the code
 - Deploy to any hosting
-- Use on multiple domains (owned by you)
+- Use on TrendwatchAI domains
 
-❌ You may not:
+❌ **Prohibited:**
+- Use for any other project or company
+- Resell or redistribute the source code
+- Sublicense to third parties
 
-- Resell the source code
-- Redistribute as a template
-- Remove copyright notices
+📋 **Portfolio Exception:**
+The developer (js-easy-school) retains the right to display this project in portfolio.
 
-© 2026 All rights reserved.
+See [LICENSE](./LICENSE) for full terms.
+
+© 2026 Andrey Mazunin (js-easy-school)

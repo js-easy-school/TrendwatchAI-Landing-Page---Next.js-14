@@ -1,21 +1,72 @@
-MIT License
+# PROPRIETARY LICENSE
 
-Copyright (c) 2024 TrendwatchAI
+## TrendwatchAI Landing Page - Next.js Redesign
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**Copyright (c) 2026 Andrey Mazunin (js-easy-school)**
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
+
+## GRANT OF LICENSE
+
+This software and associated documentation files (the "Software") are licensed 
+**exclusively** for commercial use by:
+
+**Licensee:** TrendwatchAI  
+**Website:** https://trendwatch.framer.ai  
+**Contact:** @olegmazunin (Telegram)
+
+---
+
+## PERMITTED USES
+
+The Licensee (TrendwatchAI / trendwatch.framer.ai) MAY:
+
+✅ Use the Software for commercial purposes  
+✅ Modify the source code  
+✅ Deploy to any hosting platform  
+✅ Use on domains owned by the Licensee  
+✅ Create derivative works for internal use  
+
+---
+
+## RESTRICTIONS
+
+The Licensee and any third parties MAY NOT:
+
+❌ Redistribute the source code publicly  
+❌ Sell or sublicense the Software to third parties  
+❌ Use the Software for any project other than TrendwatchAI  
+❌ Remove or modify this license notice  
+❌ Claim ownership of the original code  
+
+---
+
+## PORTFOLIO EXCEPTION
+
+The Developer (Andrey Mazunin / js-easy-school) retains the right to:
+
+- Display this project in personal portfolio for demonstration purposes
+- Reference this work in professional contexts
+- Use code patterns and techniques in future projects
+
+---
+
+## DISCLAIMER
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED. THE DEVELOPER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+---
+
+## ACKNOWLEDGMENT
+
+This is a redesign/migration of the original Framer project:  
+**Original:** https://trendwatch.framer.ai
+
+All brand assets, images, and trademarks belong to their respective owners.
+
+---
+
+**Effective Date:** January 2026  
+**Developer:** Andrey Mazunin (@alexxxm / js-easy-school)
